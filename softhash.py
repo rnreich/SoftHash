@@ -38,7 +38,7 @@ def softhash_weights(kObj, hashsize):
     obj_weights = np.concatenate(obj_weights, axis=None)
     obj_weights = softhash_floats(inv_weights, hashsize, np.zeros(hashsize))
 
-    return model_weights.reshape((1, hashsize))
+    return obj_weights.reshape((1, hashsize))
 
 # ------------------------------------------------------------------------------------------- #
 
