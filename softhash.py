@@ -16,7 +16,7 @@ softhash_optimizer = SGD()
 
 # 'subjectively' means that we're assuming neural networks already have abstract mathematical
 # intelligence embedded in their structure. there's no better explanation of this giving
-# better results than normal traning.
+# better results than normal training.
 
 def fit_subjectively(model, train_x, train_y, _epochs=1, _batch_size=1, _verbose=0):
     perception = model.predict(train_x)
